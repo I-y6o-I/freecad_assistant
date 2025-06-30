@@ -1,0 +1,38 @@
+<languages/>
+{{UnfinishedDocu{{#translation:}}}}
+
+{{Docnav
+|[[Inspection_Workbench|Inspection Workbench]]
+|[[Mesh_Workbench|Mesh Workbench]]
+|IconL=Workbench_Inspection.svg
+|IconR=Workbench_Mesh.svg
+}}
+
+[[Image:Workbench_Material.svg|thumb|128px|Material workbench icon]]
+
+== Introduction ==
+
+{{Version|1.0}}
+
+The [[Image:Workbench_Material.svg|24px]] [[Material_Workbench|Material Workbench]] handles the FreeCAD material system.
+
+== Tools ==
+
+All Material Workbench tools can be accessed from the Material menu. Almost all are also available in the Material toolbar.
+
+* [[Image:Material_Edit.svg|32px]] [[Material_Edit|Material Edit]]: Opens a new material editor.
+
+== Preferences ==
+
+* [[File:Preferences-material.svg|32px]] [[Material_Preferences|Preferences]]: Preferences for the Material Workbench.
+
+{{Docnav
+|[[Inspection_Workbench|Inspection Workbench]]
+|[[Mesh_Workbench|Mesh Workbench]]
+|IconL=Workbench_Inspection.svg
+|IconR=Workbench_Mesh.svg
+}}
+
+[[Category:Material{{#translation:}}]]
+{{Userdocnavi{{#translation:}}}}
+[[Category:Workbenches{{#translation:}}]]

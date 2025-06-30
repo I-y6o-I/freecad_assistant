@@ -1,0 +1,284 @@
+prompt,code
+create a block 10 by 5 by 20,"box = Part.createBox(10,20,5)"
+create a rectangular box measuring 12 x 50 x 14,"box = Part.createBox(12,14,50)"
+make a cube with side length 5,"cube = Part.createBox(5,5,5)"
+create a block 7 by 3 by 9,"box = Part.createBox(7,9,3)"
+"create a box with width 14, height = 50, len 12","box = Part.createBox(12,50,14)"
+"make a box 10 long, 5 wide, 20 high","box = Part.createBox(10,20,5)"
+"create a cuboid of length 15, width 10, and height 5","box = Part.createBox(15,5,10)"
+"create a box with length = 12, height = 50, width = 14","box = Part.createBox(12,50,14)"
+create a box of dimensions 2.5×3.5×1.5,"box = Part.createBox(2.5,1.5,3.5)"
+create a box with dimensions 8 by 8 by 12,"box = Part.createBox(8,12,8)"
+"create a box of length 6, width 2, height 2","box = Part.createBox(6,2,2)"
+"create a cuboid of length 10, width 5, and height 20","box = Part.createBox(10,20,5)"
+"create a box with width 5, height 20, len 10","box = Part.createBox(10,20,5)"
+"create a box of length 4, width 4, height 8","box = Part.createBox(4,8,4)"
+make a box with dimensions 6 by 2 by 2,"box = Part.createBox(6,2,2)"
+create a rectangular box measuring 8 x 8 x 12,"box = Part.createBox(8,12,8)"
+"create a box of length 9, width 9, height 3","box = Part.createBox(9,3,9)"
+"create a box of length 20, width 5, height 5","box = Part.createBox(20,5,5)"
+"create a cuboid of length 7, width 3, and height 9","box = Part.createBox(7,9,3)
+Cylinder"
+create a cylinder of height 12 and radius 6,"cylinder = Part.createCylinder(6,12)"
+create a cylinder with radius 5 and height 20,"cylinder = Part.createCylinder(5,20)"
+create a cylinder with height 20 mm and radius 5 mm,"cylinder = Part.createCylinder(5,20)"
+create a cylinder on the YZ plane with radius 4 and height 15,"cylinder = Part.createCylinder(4,15, axis=XAxis)"
+create a vertical cylinder of radius 3 and height 10,"cylinder = Part.createCylinder(3,10)"
+create a cylindrical rod with radius 7 and height 7,"cylinder = Part.createCylinder(7,7)"
+"make a cylinder, radius = 2.5, height = 5","cylinder = Part.createCylinder(2.5,5)"
+create a cylinder on the XZ plane with radius 2 and height 8,"cylinder = Part.createCylinder(2,8, axis=YAxis)"
+create a cylinder of radius 1 and height 5,"cylinder = Part.createCylinder(1,5)"
+create a cylindrical rod with radius 4 and height 15,"cylinder = Part.createCylinder(4,15)"
+create a cylindrical rod with radius 10 and height 5,"cylinder = Part.createCylinder(10,5)"
+create a cylindrical rod with radius 3 and height 15,"cylinder = Part.createCylinder(3,15)
+Sphere"
+create a sphere of radius 10,sphere = Part.createSphere(10)
+create a sphere with radius = 5,sphere = Part.createSphere(5)
+make a sphere with radius 8 mm,sphere = Part.createSphere(8)
+create a ball of radius 3,sphere = Part.createSphere(3)
+"create a sphere of radius 4 at (0,0,0)","sphere = Part.createSphere(4, center=(0,0,0))"
+create a sphere of radius 6.5,sphere = Part.createSphere(6.5)
+"create a sphere of radius 2 at (0,0,0)","sphere = Part.createSphere(2, center=(0,0,0))"
+make a sphere with radius 1,sphere = Part.createSphere(1)
+create a sphere of radius 9,sphere = Part.createSphere(9)
+make a sphere with radius 2 mm,"sphere = Part.createSphere(2)
+Cone (Truncated Cone)"
+"create a cone with base radius 5, top radius 2, height 10","cone = Part.createCone(5,2,10)"
+create a cone of height 10 with bottom radius 5 and top radius 2,"cone = Part.createCone(5,2,10)"
+"make a cone with base radius = 4, top radius = 0, height = 8","cone = Part.createCone(4,0,8)"
+"make a cone of height 7, base radius 3, top radius 3","cone = Part.createCone(3,3,7)"
+"create a frustum with bottom radius 6, top radius 2, height 10","cone = Part.createCone(6,2,10)"
+make a cone with base radius 5 and height 10,"cone = Part.createCone(5,0,10)"
+"create a cone with base radius 2, top radius 1, height 4","cone = Part.createCone(2,1,4)"
+"create a cone with base radius 8, top radius 4, height 5","cone = Part.createCone(8,4,5)"
+"make a cone of height 5, base radius 10, top radius 5","cone = Part.createCone(10,5,5)
+Torus"
+create a torus with radius 10 and tube radius 3,"torus = Part.createTorus(10,3)"
+make a torus of radius 15 and tube radius 4,"torus = Part.createTorus(15,4)"
+create a donut shape with radius 6 and tube radius 2,"torus = Part.createTorus(6,2)"
+create a ring with major radius 8 and minor radius 2,"torus = Part.createTorus(8,2)"
+create a torus with radius 5 and tube radius 1.5,"torus = Part.createTorus(5,1.5)"
+create a torus with radius 10 and tube radius 1,"torus = Part.createTorus(10,1)"
+make a torus of radius 3 and tube radius 1,"torus = Part.createTorus(3,1)"
+create a donut shape with radius 5 and tube radius 2,"torus = Part.createTorus(5,2)"
+"draw a line from (0,0) to (10,0) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, 10,0)"
+"draw a line from (0,0) to (0,10) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, 0,10)"
+"draw a line between (0,0) and (10,10) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, 10,10)"
+"draw a line between (2,1) and (2,5) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addLine(2,1, 2,5)"
+"sketch a line connecting (-3,4) and (5,4) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(-3,4, 5,4)"
+"add a line segment from (1,1) to (1,5) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(1,1, 1,5)"
+"draw a line from (0,0) to (-5,5) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, -5,5)"
+"draw a line from (0,0) to (0,-7) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(0,0, 0,-7)"
+"sketch a line connecting (2,0) and (2,5) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(2,0, 2,5)"
+"draw a line from (-2,-2) to (4,-2) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(-2,-2, 4,-2)"
+"add a line segment from (1.5,0) to (1.5,5) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(1.5,0, 1.5,5)"
+"draw a line from (0,0) to (0,5) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addLine(0,0, 0,5)"
+"draw a line from (0,5) to (5,5) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,5, 5,5)"
+"draw a line between (5,0) and (5,10) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addLine(5,0, 5,10)"
+"sketch a line connecting (10,0) and (0,10) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(10,0, 0,10)"
+"add a line segment from (0,2) to (7,2) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(0,2, 7,2)"
+"draw a line from (-4,0) to (-4,4) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addLine(-4,0, -4,4)"
+"draw a line from (5,0) to (5,10) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addLine(5,0, 5,10)"
+"draw a line from (10,0) to (0,10) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(10,0, 0,10)"
+"sketch a line connecting (0,1) and (5,2) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addLine(0,1, 5,2)"
+"add a line segment from (3,-3) to (-3,3) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addLine(3,-3, -3,3)
+Circle"
+draw a circle of radius 5 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 5)"
+"add a circle with radius 10 at (3,3) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(3,3, 10)"
+draw a circle of radius 8 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 8)"
+create a circle with radius = 6 on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addCircle(0,0, 6)"
+"sketch a circle of radius 4 centered at (2,2) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(2,2, 4)"
+"on the XZ plane, draw a circle with radius 7","sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 7)"
+draw a circle of radius 3 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 3)"
+"add a circle with radius 2 at (-1,1) on the YZ plane","sketch = Sketch.create(YZPlane)
+sketch.addCircle(-1,1, 2)"
+draw a circle of radius 2.5 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 2.5)"
+"add a circle with radius 9 at (0,0) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 9)"
+draw a circle of radius 5 on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addCircle(0,0, 5)"
+create a circle with radius = 3 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 3)"
+"sketch a circle of radius 8 centered at (0,0) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 8)"
+"add a circle with radius 1.5 at (0,0) on the XZ plane","sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 1.5)"
+"on the YZ plane, draw a circle with radius 5","sketch = Sketch.create(YZPlane)
+sketch.addCircle(0,0, 5)"
+draw a circle of radius 7 mm on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 7)"
+"add a circle with radius 3 at (4,0) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(4,0, 3)"
+draw a circle of radius 6 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 6)"
+"sketch a circle of radius 8 centered at (0,0) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 8)
+Rectangle"
+draw a rectangle of width 10 and height 5 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(10,5)"
+create a rectangle 8 wide and 4 tall on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(8,4)"
+sketch a rectangle measuring 6 by 3 on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addRectangle(6,3)"
+add a rectangle 10 mm by 5 mm on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(10,5)"
+draw a square of side 5 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(5,5)"
+draw a square of side 7 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(7,7)"
+create a rectangle 12 wide and 6 tall on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addRectangle(12,6)"
+sketch a rectangle measuring 4 by 4 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(4,4)"
+draw a rectangle of width 15 and height 10 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(15,10)"
+create a square of side 8 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(8,8)"
+create a rectangle 5 wide and 2 tall on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addRectangle(5,2)"
+draw a rectangle of width 2 and height 8 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(2,8)"
+draw a square of side 10 on the YZ plane,"sketch = Sketch.create(YZPlane)
+sketch.addRectangle(10,10)"
+sketch a rectangle measuring 3.5 by 2.5 on the XY plane,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(3.5,2.5)"
+draw a square of side 8 on the XZ plane,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(8,8)
+Multiple Sketch Elements"
+"on the XY plane, draw a rectangle 10 by 6 and a circle of radius 2 at (5,3)","sketch = Sketch.create(XYPlane)
+sketch.addRectangle(10,6)
+sketch.addCircle(5,3, 2)"
+"on the XZ plane, draw a horizontal line from (0,0) to (4,0) and a vertical line from (0,0) to (0,5)","sketch = Sketch.create(XZPlane)
+sketch.addLine(0,0, 4,0)
+sketch.addLine(0,0, 0,5)"
+"draw a circle of radius 3 and another circle of radius 1 at (2,0) on the XY plane","sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 3)
+sketch.addCircle(2,0, 1)"
+"on the XY plane, draw a triangle connecting (0,0), (5,0), and (5,5)","sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, 5,0)
+sketch.addLine(5,0, 5,5)
+sketch.addLine(5,5, 0,0)"
+"on the YZ plane, draw a circle of radius 2 at (0,0) and a line from (0,0) to (0,4)","sketch = Sketch.create(YZPlane)
+sketch.addCircle(0,0, 2)
+sketch.addLine(0,0, 0,4)
+Extrusion (Pad) Commands
+These commands take a 2D sketch or profile and extrude it to create a 3D solid. The input command specifies the sketch (often by describing a shape drawn on a plane) and the extrusion distance (and sometimes direction). The code shows the sketch creation and then uses Part.extrude(sketch, distance, direction) to perform the extrusion. If no direction is given, the extrusion is along the sketch’s normal."
+draw a circle of radius 5 on the XY plane and extrude it by 10,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 5)
+solid = Part.extrude(sketch, 10)"
+draw a rectangle 4 by 6 on the XZ plane and extrude it by 5,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(4,6)
+solid = Part.extrude(sketch, 5)"
+"on the YZ plane, sketch a circle of radius 3 and extrude it by 12 along the X axis","sketch = Sketch.create(YZPlane)
+sketch.addCircle(0,0, 3)
+solid = Part.extrude(sketch, 12, direction=XAxis)"
+draw a square of side 2 on the XY plane and extrude it by 5,"sketch = Sketch.create(XYPlane)
+sketch.addRectangle(2,2)
+solid = Part.extrude(sketch, 5)"
+extrude the sketch on the XZ plane by 10 in the positive Y direction,"sketch = Sketch.create(XZPlane)
+solid = Part.extrude(sketch, 10, direction=YAxis)"
+extrude the sketch by 15 mm upward,"solid = Part.extrude(sketch, 15)"
+"on the XZ plane, extrude the sketch by 8 along the Y axis","sketch = Sketch.create(XZPlane)
+solid = Part.extrude(sketch, 8, direction=YAxis)"
+draw a polygon (triangle) on the XY plane and extrude it by 4,"sketch = Sketch.create(XYPlane)
+sketch.addLine(0,0, 4,0)
+sketch.addLine(4,0, 2,3)
+sketch.addLine(2,3, 0,0)
+solid = Part.extrude(sketch, 4)"
+draw a circle of radius 2 on the XZ plane and extrude it by 7,"sketch = Sketch.create(XZPlane)
+sketch.addCircle(0,0, 2)
+solid = Part.extrude(sketch, 7)
+Revolution (Rotate) Commands
+These commands revolve a 2D profile around an axis to create a 3D object. The command indicates the angle of rotation (in degrees) and the axis (X, Y, or Z). The code uses Part.revolve(sketch, Axis, angle) after creating the sketch. Some commands use the word “rotate” in a context of revolving a profile, which the code handles with the revolve function."
+revolve the sketch on the XY plane 360 degrees around the Z axis,"sketch = Sketch.create(XYPlane)
+solid = Part.revolve(sketch, ZAxis, 360)"
+rotate the sketch 180 degrees about the X axis,"solid = Part.revolve(sketch, XAxis, 180)"
+"draw a circle of radius 2 at (5,0) on the XY plane and revolve it 360 degrees about the Y axis","sketch = Sketch.create(XYPlane)
+sketch.addCircle(5,0, 2)
+solid = Part.revolve(sketch, YAxis, 360)"
+draw a rectangle 2 by 4 on the XZ plane and revolve it 90 degrees around the X axis,"sketch = Sketch.create(XZPlane)
+sketch.addRectangle(2,4)
+solid = Part.revolve(sketch, XAxis, 90)"
+"on the YZ plane, revolve the profile by 360 degrees around the Z axis","sketch = Sketch.create(YZPlane)
+solid = Part.revolve(sketch, ZAxis, 360)"
+revolve the sketch by 270 degrees around the Y axis,"solid = Part.revolve(sketch, YAxis, 270)"
+rotate the profile around the X axis by 360 degrees,"solid = Part.revolve(sketch, XAxis, 360)"
+"draw a line from (0,5) to (0,10) on the XZ plane and revolve it 360 degrees around the Z axis","sketch = Sketch.create(XZPlane)
+sketch.addLine(0,5, 0,10)
+solid = Part.revolve(sketch, ZAxis, 360)"
+draw a semicircle of radius 4 on the XY plane and revolve it 360 degrees around the X axis,"sketch = Sketch.create(XYPlane)
+sketch.addCircle(0,0, 4)
+solid = Part.revolve(sketch, XAxis, 360)
+Boolean Operations
+These commands perform boolean operations between solids, such as cutting (subtracting), fusing (union), or intersecting shapes. The command often consists of creating two shapes and then specifying the operation. The code first creates the two objects (using Part.create...) and then applies Part.cut, Part.union, or Part.intersect accordingly. All dimensions for both shapes are given in the command and used in code. The operation is described with words like “cut”, “subtract”, “combine”, or “intersect” in the command."
+"create a 10×10×10 box and a cylinder of radius 5 and height 10, then cut the cylinder out of the box","box = Part.createBox(10,10,10)
+cylinder = Part.createCylinder(5,10)
+result = Part.cut(box, cylinder)"
+"create a box of length 8, width 8, height 8 and a sphere of radius 5, subtract the sphere from the box","box = Part.createBox(8,8,8)
+sphere = Part.createSphere(5)
+result = Part.cut(box, sphere)"
+"create a sphere of radius 5 and a cylinder of radius 5 and height 10, then union them","sphere = Part.createSphere(5)
+cylinder = Part.createCylinder(5,10)
+result = Part.union(sphere, cylinder)"
+"create a 6×6×6 box and a cylinder of radius 3 and height 6, then combine them","box = Part.createBox(6,6,6)
+cylinder = Part.createCylinder(3,6)
+result = Part.union(box, cylinder)"
+"create a 10×10×10 box and a sphere of radius 8 at (5,5,5), then intersect them","box = Part.createBox(10,10,10)
+sphere = Part.createSphere(8, center=(5,5,5))
+result = Part.intersect(box, sphere)"
+"create a cylinder of radius 4 and height 8 and a sphere of radius 4, then find their intersection","cylinder = Part.createCylinder(4,8)
+sphere = Part.createSphere(4)
+result = Part.intersect(cylinder, sphere)
+Transformation Commands
+These commands move or rotate existing objects, or mirror them across a plane. The natural language command might use terms like “move”, “translate”, “rotate”, or “mirror” along with distances or angles. The code uses transformation functions such as Part.translate(object, (dx,dy,dz)) to move an object, Part.rotate(object, Axis, angle) to rotate an object about an axis, and Part.mirror(object, Plane) to mirror an object. Some commands chain multiple transformations (e.g. rotate then move) in one sequence."
+"create a sphere of radius 3 and move it by (10, 0, 0)","sphere = Part.createSphere(3)
+sphere = Part.translate(sphere, (10,0,0))"
+"create a box 2×2×2 and translate it by (5, 5, 0)","box = Part.createBox(2,2,2)
+box = Part.translate(box, (5,5,0))"
+"create a cylinder (radius 1, height 5) and rotate it 90 degrees around the Z axis","cylinder = Part.createCylinder(1,5)
+cylinder = Part.rotate(cylinder, ZAxis, 90)"
+create a box 3×2×1 and mirror it across the YZ plane,"box = Part.createBox(3,1,2)
+mirrored_box = Part.mirror(box, YZPlane)"
+"create a box of length 4, width 2, height 1 and rotate it 45 degrees about the X axis","box = Part.createBox(4,1,2)
+box = Part.rotate(box, XAxis, 45)"
+create a cylinder of radius 2 and height 5 and mirror it across the XY plane,"cylinder = Part.createCylinder(2,5)
+mirrored = Part.mirror(cylinder, XYPlane)"
+"create a box 1×1×3, rotate it 90 degrees around the Z axis and then move it by (0, 5, 0)","box = Part.createBox(1,3,1)
+box = Part.rotate(box, ZAxis, 90)
+box = Part.translate(box, (0,5,0))"
+"create a sphere of radius 2, move it by (2, 2, 0) and mirror it across the XZ plane","sphere = Part.createSphere(2)
+sphere = Part.translate(sphere, (2,2,0))
+mirrored = Part.mirror(sphere, XZPlane)"
+create a cylinder of radius 1 and height 2 and move it up by 5,"cylinder = Part.createCylinder(1,2)
+cylinder = Part.translate(cylinder, (0,0,5))"
+create a sphere of radius 4 and rotate it 90 degrees around the Y axis,"sphere = Part.createSphere(4)
+sphere = Part.rotate(sphere, YAxis, 90)"
