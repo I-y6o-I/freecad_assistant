@@ -1,0 +1,47 @@
+<languages/>
+
+{{Docnav
+|[[FEM_PostFilterLinearizedStresses|Stress linearization plot]]
+|[[FEM_PostFilterCalculator|Calculator filter]]
+|[[FEM_Workbench|FEM]]
+|IconL=FEM_PostFilterLinearizedStresses.svg
+|IconR=FEM_PostFilterCalculator.svg
+|IconC=Workbench_FEM.svg
+}}
+
+{{GuiCommand
+|Name=FEM PostFilterDataAtPoint
+|MenuLocation=Results → Data at point clip filter
+|Workbenches=[[FEM_Workbench|FEM]]
+|SeeAlso=[[FEM_PostPipelineFromResult|FEM Result pipeline]], [[FEM_tutorial|FEM tutorial]]
+}}
+
+==Description==
+
+Displays the value of a selected field at a picked point.
+
+==Usage==
+
+# Select a previously created [[FEM_PostPipelineFromResult|result pipeline]] or another filter (except of a line filter).
+# There are several ways to invoke the command:
+#* Press the {{Button|[[Image:FEM_PostFilterDataAtPoint.svg|16px]] [[FEM_PostFilterDataAtPoint|Data at point clip filter]]}} button.
+#* Select the {{MenuCommand|Results → [[Image:FEM_PostFilterDataAtPoint.svg|16px]] Data at point clip filter}} option from the menu.
+# Select a result {{MenuCommand|Field}}.
+# Now
+#* either click the {{Button|Select Point}} button and subsequently pick the desired point in the mesh.
+#* change the point coordinate.
+
+The value at this point for the given '''Field''' is output to the dialog. The value of the data point is also anytime accessible via the [[Property_editor|property]] {{PropertyData|Point Data}}.
+
+
+{{Docnav
+|[[FEM_PostFilterLinearizedStresses|Stress linearization plot]]
+|[[FEM_PostFilterCalculator|Calculator filter]]
+|[[FEM_Workbench|FEM]]
+|IconL=FEM_PostFilterLinearizedStresses.svg
+|IconR=FEM_PostFilterCalculator.svg
+|IconC=Workbench_FEM.svg
+}}
+
+{{FEM Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

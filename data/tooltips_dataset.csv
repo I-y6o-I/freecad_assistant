@@ -1,0 +1,279 @@
+X,Y
+Create a wall,"import Arch
+obj = Arch.makeWall()"
+Create a structural element,"import Arch
+obj = Arch.makeStructure(length=1000, width=1000, height=3000)"
+Add a window,"import Draft, Arch
+base = Draft.makeRectangle(1000, 1500)
+obj = Arch.makeWindow(base)"
+Add a door,"import Draft, Arch
+base = Draft.makeRectangle(900, 2100)
+obj = Arch.makeWindow(base)"
+Create a roof,"import Draft, Arch
+base = Draft.makeRectangle(4000, 8000)
+obj = Arch.makeRoof(base)"
+Create a staircase,"import Arch
+obj = Arch.makeStairs(steps=10, width=1000, height=3000, length=2000)"
+Create a lot,"import Arch
+obj = Arch.makeSite()"
+Create a building,"import Arch
+obj = Arch.makeBuilding()"
+Create a floor,"import Arch
+obj = Arch.makeFloor()"
+Create a cutting plane,"import Arch
+obj = Arch.makeSectionPlane()"
+Add rebar,FreeCADGui.runCommand('Arch_Rebar')
+Create an axis grid,"import Arch
+obj = Arch.makeAxis(num=5)"
+Create a frame structure,FreeCADGui.runCommand('Arch_Frame')
+Create a panel,FreeCADGui.runCommand('Arch_Panel')
+Create a curtain wall,FreeCADGui.runCommand('Arch_CurtainWall')
+Create a schedule,FreeCADGui.runCommand('Arch_Schedule')
+Assign a material,FreeCADGui.runCommand('Arch_SetMaterial')
+Add a column (BIM),"import Arch
+obj = Arch.makeStructure(length=300, width=300, height=3000)"
+Add a beam,"import Arch
+obj = Arch.makeStructure(length=5000, width=300, height=300)"
+Add a floor slab,"import Arch
+obj = Arch.makeStructure(length=4000, width=4000, height=200)"
+Open BIM Welcome,FreeCADGui.runCommand('BIM_Welcome')
+Open BIM Settings,FreeCADGui.runCommand('BIM_Setup')
+Open IFC Browser,FreeCADGui.runCommand('BIM_IfcExplorer')
+Specify North Direction,FreeCADGui.runCommand('BIM_North')
+Create a new sketch,FreeCADGui.runCommand('Sketcher_NewSketch')
+Draw a line,FreeCADGui.runCommand('Sketcher_CreateLine')
+Draw a polyline,FreeCADGui.runCommand('Sketcher_CreatePolyline')
+Draw a circle,FreeCADGui.runCommand('Sketcher_CreateCircle')
+Draw an arc,FreeCADGui.runCommand('Sketcher_CreateArc')
+Draw a rectangle,FreeCADGui.runCommand('Sketcher_CreateRectangle')
+Draw a point,FreeCADGui.runCommand('Sketcher_CreatePoint')
+Draw an ellipse,FreeCADGui.runCommand('Sketcher_CreateEllipse')
+Draw an arc of an ellipse,FreeCADGui.runCommand('Sketcher_CreateArcOfEllipse')
+Draw a B-spline,FreeCADGui.runCommand('Sketcher_CreateBSpline')
+Draw a rectangular hole (slot),FreeCADGui.runCommand('Sketcher_CreateSlot')
+Round a corner,FreeCADGui.runCommand('Sketcher_CreateFillet')
+Trim a segment,FreeCADGui.runCommand('Sketcher_Trim')
+Extend a segment,FreeCADGui.runCommand('Sketcher_Extend')
+Make a line horizontal,FreeCADGui.runCommand('Sketcher_ConstrainHorizontal')
+Make a line vertical,FreeCADGui.runCommand('Sketcher_ConstrainVertical')
+Add parallel,FreeCADGui.runCommand('Sketcher_ConstrainParallel')
+Add perpendicular,FreeCADGui.runCommand('Sketcher_ConstrainPerpendicular')
+Add tangency,FreeCADGui.runCommand('Sketcher_ConstrainTangent')
+Add equality,FreeCADGui.runCommand('Sketcher_ConstrainEqual')
+Add symmetry,FreeCADGui.runCommand('Sketcher_ConstrainSymmetric')
+Add coincidence,FreeCADGui.runCommand('Sketcher_ConstrainCoincident')
+Add a point on an object,FreeCADGui.runCommand('Sketcher_ConstrainPointOnObject')
+Catch a point,FreeCADGui.runCommand('Sketcher_ConstrainLock')
+Add a dimension,FreeCADGui.runCommand('Sketcher_ConstrainDistance')
+Add a horizontal dimension,FreeCADGui.runCommand('Sketcher_ConstrainDistanceX')
+Add a vertical dimension,FreeCADGui.runCommand('Sketcher_ConstrainDistanceY')
+Add a radius,FreeCADGui.runCommand('Sketcher_ConstrainRadius')
+Add a diameter,FreeCADGui.runCommand('Sketcher_ConstrainDiameter')
+Add an angle,FreeCADGui.runCommand('Sketcher_ConstrainAngle')
+Add external geometry,FreeCADGui.runCommand('Sketcher_External')
+Toggle construction mode,FreeCADGui.runCommand('Sketcher_ToggleConstruction')
+Make a dimension a reference,FreeCADGui.runCommand('Sketcher_ToggleDrivingConstraint')
+Copy parts from another sketch,FreeCADGui.runCommand('Sketcher_CarbonCopy')
+Create a line between points,"import FreeCAD, Draft
+Draft.makeLine(FreeCAD.Vector(0,0,0), FreeCAD.Vector(1000,0,0))"
+Create a polyline,FreeCADGui.runCommand('Draft_Wire')
+Create a circle,"import Draft
+Draft.makeCircle(radius=500)"
+Create an arc of a circle,"import Draft
+Draft.makeCircle(radius=500, startAngle=0, endAngle=90)"
+Create a rectangle,"import Draft
+Draft.makeRectangle(2000, 1000)"
+Create a regular polygon,"import Draft
+Draft.makePolygon(6, radius=1000)"
+Create an ellipse,"import Draft
+Draft.makeEllipse(1000, 500)"
+Create a spline through points,"import FreeCAD, Draft
+pts = [FreeCAD.Vector(0,0,0), FreeCAD.Vector(1000,500,0), FreeCAD.Vector(2000,0,0)]
+Draft.makeBSpline(pts)"
+Create a Bezier curve,"import FreeCAD, Draft
+pts = [FreeCAD.Vector(0,0,0), FreeCAD.Vector(1000,500,0), FreeCAD.Vector(2000,0,0)]
+Draft.makeBezCurve(pts)"
+Add a text object,"import Draft
+Draft.makeShapeString('TEXT', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 100)"
+Add a dimension segment,FreeCADGui.runCommand('Draft_Dimension')
+Create an array of copies,FreeCADGui.runCommand('Draft_Array')
+Create an array by path,FreeCADGui.runCommand('Draft_PathArray')
+Combine objects (Upgrade),FreeCADGui.runCommand('Draft_Upgrade')
+Decompose an object (Downgrade),FreeCADGui.runCommand('Draft_Downgrade')
+Move an object,FreeCADGui.runCommand('Draft_Move')
+Rotate an object,FreeCADGui.runCommand('Draft_Rotate')
+Scale an object,FreeCADGui.runCommand('Draft_Scale')
+Add a point,FreeCADGui.runCommand('Draft_Point')
+Set a work plane,FreeCADGui.runCommand('Draft_SelectPlane')
+Turn on snap to ends,FreeCADGui.runCommand('Draft_SnapEndpoint')
+Turn on snap to middles,FreeCADGui.runCommand('Draft_SnapMidpoint')
+Turn on grid,FreeCADGui.runCommand('Draft_ToggleGrid')
+Turn on orthographic mode,FreeCADGui.runCommand('Draft_Ortho')
+Turn on continuation mode,FreeCADGui.runCommand('Draft_Continue')
+Create a clone of an object,FreeCADGui.runCommand('Draft_Clone')
+Convert drawing to sketch,FreeCADGui.runCommand('Draft_Draft2Sketch')
+Toggle construction mode,FreeCADGui.runCommand('Draft_Construction')
+Create a 2D projection,FreeCADGui.runCommand('Draft_Shape2DView')
+Create a plane from a face,FreeCADGui.runCommand('Arch_Facebinder')
+Create a cube,"FreeCAD.ActiveDocument.addObject('Part::Box','Box')"
+Create a cylinder,"FreeCAD.ActiveDocument.addObject('Part::Cylinder','Cylinder')"
+Create a sphere,"FreeCAD.ActiveDocument.addObject('Part::Sphere','Sphere')"
+Create a cone,"FreeCAD.ActiveDocument.addObject('Part::Cone','Cone')"
+Create a torus,"FreeCAD.ActiveDocument.addObject('Part::Torus','Torus')"
+Create wedge,"FreeCAD.ActiveDocument.addObject('Part::Wedge','Wedge')"
+Create a prism,"FreeCAD.ActiveDocument.addObject('Part::Prism','Prism')"
+Create a pyramid,"FreeCAD.ActiveDocument.addObject('Part::Pyramid','Pyramid')"
+Create a helix,"FreeCAD.ActiveDocument.addObject('Part::Helix','Helix')"
+Combine objects (Boolean),FreeCADGui.runCommand('Part_Fuse')
+Subtract one object from another,FreeCADGui.runCommand('Part_Cut')
+Intersect objects,FreeCADGui.runCommand('Part_Common')
+Extrude a shape,FreeCADGui.runCommand('Part_Extrude')
+Rotate a profile,FreeCADGui.runCommand('Part_Revolve')
+Loft,FreeCADGui.runCommand('Part_Loft')
+Extrude along a path,FreeCADGui.runCommand('Part_Sweep')
+Mirror an object,FreeCADGui.runCommand('Part_Mirror')
+Refine a shape,FreeCADGui.runCommand('Part_RefineShape')
+Check geometry,FreeCADGui.runCommand('Part_CheckGeometry')
+Create a shape from a mesh,FreeCADGui.runCommand('Part_ShapeFromMesh')
+Convert to solid,FreeCADGui.runCommand('Part_ConvertToSolid')
+Combine into compound,FreeCADGui.runCommand('Part_MakeCompound')
+Disconnect compound,FreeCADGui.runCommand('Part_CompoundExplode')
+Make a section,FreeCADGui.runCommand('Part_Section')
+Cut into pieces,FreeCADGui.runCommand('Part_SliceApart')
+Create a shell,FreeCADGui.runCommand('Part_Thickness')
+Make a simple copy,FreeCADGui.runCommand('Part_SimpleCopy')
+Create a new solid,FreeCADGui.runCommand('PartDesign_NewBody')
+Execute Pad,FreeCADGui.runCommand('PartDesign_Pad')
+Pocket,FreeCADGui.runCommand('PartDesign_Pocket')
+Revolve,FreeCADGui.runCommand('PartDesign_Revolution')
+Groove,FreeCADGui.runCommand('PartDesign_Groove')
+Add path feature,FreeCADGui.runCommand('PartDesign_AdditivePipe')
+Cut path feature,FreeCADGui.runCommand('PartDesign_SubtractivePipe')
+Loft feature,FreeCADGui.runCommand('PartDesign_AdditiveLoft')
+Loft cut,FreeCADGui.runCommand('PartDesign_SubtractiveLoft')
+Add fillet,FreeCADGui.runCommand('PartDesign_Fillet')
+Add chamfer,FreeCADGui.runCommand('PartDesign_Chamfer')
+Add linear array,FreeCADGui.runCommand('PartDesign_LinearPattern')
+Add polar array,FreeCADGui.runCommand('PartDesign_PolarPattern')
+Add mirror image,FreeCADGui.runCommand('PartDesign_Mirrored')
+Create hole,FreeCADGui.runCommand('PartDesign_Hole')
+Create shell,FreeCADGui.runCommand('PartDesign_Thickness')
+Add primitive (cube) to solid,FreeCADGui.runCommand('PartDesign_AdditiveBox')
+Add cutout (sphere) to solid,FreeCADGui.runCommand('PartDesign_SubtractiveSphere')
+Add reference plane,FreeCADGui.runCommand('PartDesign_Plane')
+Add reference axis,FreeCADGui.runCommand('PartDesign_Line')
+Add reference point,FreeCADGui.runCommand('PartDesign_Point')
+Apply Multitransform,FreeCADGui.runCommand('PartDesign_MultiTransform')
+Add ShapeBinder,FreeCADGui.runCommand('PartDesign_SubShapeBinder')
+Create New Drawing,FreeCADGui.runCommand('TechDraw_NewPage')
+Add Drawing View,FreeCADGui.runCommand('TechDraw_NewView')
+Add Projection Group,FreeCADGui.runCommand('TechDraw_NewProjGroup')
+Add Sectional View,FreeCADGui.runCommand('TechDraw_NewSectionView')
+Add Detail View,FreeCADGui.runCommand('TechDraw_NewDetail')
+Add Drawing Dimension,FreeCADGui.runCommand('TechDraw_NewDimension')
+Add Radial Dimension,FreeCADGui.runCommand('TechDraw_NewRadiusDimension')
+Export Drawing to DXF,FreeCADGui.runCommand('TechDraw_ExportDXF')
+Add Weld Symbol,FreeCADGui.runCommand('TechDraw_NewWeldSymbol')
+Add Surface Finish Symbol,FreeCADGui.runCommand('TechDraw_NewSurfaceFinishSymbol')
+Export Drawing to PDF,FreeCADGui.runCommand('Std_PrintPdf')
+Create New Job,FreeCADGui.runCommand('Path_NewJob')
+Add Profiling Operation,FreeCADGui.runCommand('Path_Profile')
+Add Pocket Operation,FreeCADGui.runCommand('Path_Pocket')
+Add Drilling Operation,FreeCADGui.runCommand('Path_Drilling')
+Add Plane Machining Operation,FreeCADGui.runCommand('Path_Face')
+Add Helical Drilling Operation,FreeCADGui.runCommand('Path_Helix')
+Add Slot Operation,FreeCADGui.runCommand('Path_Slot')
+Add Adaptive Machining,FreeCADGui.runCommand('Path_Adaptive')
+Add Engraving,FreeCADGui.runCommand('Path_Engrave')
+Run Toolpath Simulation,FreeCADGui.runCommand('Path_Simulator')
+Post Process,FreeCADGui.runCommand('Path_Post')
+Add Tag,FreeCADGui.runCommand('Path_DressupTag')
+Add Probe,FreeCADGui.runCommand('Path_Probe')
+Add V-Cut,FreeCADGui.runCommand('Path_Vcarve')
+Add 3D Pocket,FreeCADGui.runCommand('Path_3DPocket')
+Add 3D Surface Machining,FreeCADGui.runCommand('Path_3DSurface')
+Add Deburr,FreeCADGui.runCommand('Path_Deburr')
+Add Waterline,FreeCADGui.runCommand('Path_Waterline')
+Add Dressup,FreeCADGui.runCommand('Path_DressupLeadInOut')
+Add Dogbone Corner Machining,FreeCADGui.runCommand('Path_DressupDogbone')
+Create FEM,FreeCADGui.runCommand('Fem_NewAnalysis')
+Add Fixture,FreeCADGui.runCommand('Fem_ConstraintFixed')
+Add Force Load,FreeCADGui.runCommand('Fem_ConstraintForce')
+Generate Element Mesh,FreeCADGui.runCommand('Fem_MeshGmshFromShape')
+Run Calculation,FreeCADGui.runCommand('Fem_SolverRun')
+Add Solver,FreeCADGui.runCommand('Fem_NewSolver')
+Add material (FEM),FreeCADGui.runCommand('Fem_MaterialAdd')
+Add pressure,FreeCADGui.runCommand('Fem_ConstraintPressure')
+Create spreadsheet,FreeCADGui.runCommand('Spreadsheet_CreateSheet')
+Import image to scene,FreeCADGui.runCommand('Image_CreateImagePlane')
+Scale image plane,FreeCADGui.runCommand('Image_Scale')
+Import point cloud,FreeCADGui.runCommand('Points_ImportASCII')
+Export points to file,FreeCADGui.runCommand('Points_Export')
+Merge mesh objects,FreeCADGui.runCommand('Mesh_Union')
+Subtract meshes,FreeCADGui.runCommand('Mesh_Difference')
+Intersect mesh objects,FreeCADGui.runCommand('Mesh_Intersection')
+Reduce polygons,FreeCADGui.runCommand('Mesh_Decimating')
+Check and fix mesh,FreeCADGui.runCommand('Mesh_Evaluate')
+Perform boolean on meshes (OpenSCAD),FreeCADGui.runCommand('OpenSCAD_MeshBoolean')
+Replace object with another (OpenSCAD),FreeCADGui.runCommand('OpenSCAD_ReplaceObject')
+Add robot,FreeCADGui.runCommand('Robot_InsertRobot')
+Run robot simulation,FreeCADGui.runCommand('Robot_Simulation')
+Load toolpath,FreeCADGui.runCommand('Robot_LoadTrajectory')
+Add tool to robot,FreeCADGui.runCommand('Robot_AddToolShape')
+Set robot home position,FreeCADGui.runCommand('Robot_SetHomePosition')
+Create new document,App.newDocument()
+Open document,FreeCADGui.runCommand('Std_Open')
+Import file,FreeCADGui.runCommand('Std_Import')
+Save document,FreeCADGui.runCommand('Std_Save')
+Save document as...,FreeCADGui.runCommand('Std_SaveAs')
+Undo,FreeCADGui.runCommand('Std_Undo')
+Redo,FreeCADGui.runCommand('Std_Redo')
+Delete selected,FreeCADGui.runCommand('Std_Delete')
+Copy selected,FreeCADGui.runCommand('Std_Copy')
+Paste from clipboard,FreeCADGui.runCommand('Std_Paste')
+Duplicate selected,FreeCADGui.runCommand('Std_DuplicateSelection')
+Create group,FreeCADGui.runCommand('Std_Group')
+Hide selected,FreeCADGui.runCommand('Std_HideSelection')
+Show all objects,FreeCADGui.runCommand('Std_ShowAll')
+Select all,FreeCADGui.runCommand('Std_SelectAll')
+Deselect,FreeCADGui.runCommand('Std_ClearSelection')
+Switch to front view,FreeCADGui.runCommand('Std_ViewFront')
+Switch to top view,FreeCADGui.runCommand('Std_ViewTop')
+Switch to isometric view,FreeCADGui.runCommand('Std_ViewIsometric')
+Switch to perspective view,FreeCADGui.runCommand('Std_ViewPerspective')
+Switch to orthographic view,FreeCADGui.runCommand('Std_ViewOrthographic')
+Switch to full screen mode,FreeCADGui.runCommand('Std_ViewFullscreen')
+Show entire scene,FreeCADGui.runCommand('Std_FitAll')
+Start recording macro,FreeCADGui.runCommand('Std_DlgMacroRecord')
+Stop recording macro,FreeCADGui.runCommand('Std_DlgMacroStop')
+Run macro,FreeCADGui.runCommand('Std_DlgMacroExecute')
+Open add-ons manager,FreeCADGui.runCommand('Std_AddonMgr')
+Open program settings,FreeCADGui.runCommand('Std_DlgPreferences')
+Open Help,FreeCADGui.runCommand('Std_HelpIndex')
+Open Project Info,FreeCADGui.runCommand('Std_DlgProjectInformation')
+Link Object,FreeCADGui.runCommand('Std_LinkMake')
+Import Linked Object,FreeCADGui.runCommand('Std_LinkImport')
+Close Document,FreeCADGui.runCommand('Std_Close')
+Close All Documents,FreeCADGui.runCommand('Std_CloseAll')
+Change Appearance,FreeCADGui.runCommand('Std_SetAppearance')
+Show Dependency Graph,FreeCADGui.runCommand('Std_DependencyGraph')
+Turn On Help (What’s This),FreeCADGui.runCommand('Std_WhatsThis')
+Open Online Help,FreeCADGui.runCommand('Std_OnlineHelp')
+Open FreeCAD Forum,FreeCADGui.runCommand('Std_FreeCADForum')
+Turn On Snap To Centers,FreeCADGui.runCommand('Draft_SnapCenter')
+Turn On Snap To Intersections,FreeCADGui.runCommand('Draft_SnapIntersection')
+Turn On Snap At Right Angles,FreeCADGui.runCommand('Draft_SnapPerpendicular')
+Add Objects To Group,FreeCADGui.runCommand('Draft_AddToGroup')
+Trim/Extend (Trimex),FreeCADGui.runCommand('Draft_Trimex')
+Make Offset,FreeCADGui.runCommand('Draft_Offset')
+Stretch Vertices,FreeCADGui.runCommand('Draft_Stretch')
+Mirror Object,FreeCADGui.runCommand('Draft_Mirror')
+Open BIM Library,FreeCADGui.runCommand('BIM_Library')
+Create Material (Arch),FreeCADGui.runCommand('Arch_Material')
+Create Space (room),FreeCADGui.runCommand('Arch_Space')
+Add alignment (Assembly2+),FreeCADGui.runCommand('A2p_ConstraintCoincident')
+Add parallelism (Assembly2+),FreeCADGui.runCommand('A2p_ConstraintParallel')
+Add angular constraint (Assembly2+),FreeCADGui.runCommand('A2p_ConstraintAngle')
+Add concentricity (Assembly2+),FreeCADGui.runCommand('A2p_ConstraintConcentric')
+Insert part into assembly (Assembly4),FreeCADGui.runCommand('Asm4_InsertPart')
+Create Part object,FreeCADGui.runCommand('Std_Part')
