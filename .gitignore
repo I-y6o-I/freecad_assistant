@@ -1,4 +1,6 @@
 .vscode
+groq_keys.txt
+expetiments_copy.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
